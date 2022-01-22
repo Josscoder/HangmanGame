@@ -1,8 +1,10 @@
+import words.WordsType;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
-import words.WordsType;
 
 public class HangmanGame {
 
@@ -17,7 +19,7 @@ public class HangmanGame {
     int numberOfWords
   ) {
     String fileName =
-      "C:\\Users\\Administrator\\Desktop\\Projects\\HangmanGame\\src\\josscoder\\hangman\\words\\" +
+        Paths.get(".").normalize().toAbsolutePath() + "\\src\\words\\" +
       type +
       ".txt";
     File wordList = new File(fileName);
