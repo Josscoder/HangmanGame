@@ -66,6 +66,10 @@ public class HangmanGame {
 
       String newWordsType = input.nextLine().toLowerCase();
 
+      if (newWordsType.isEmpty()) {
+        newWordsType = WordsType.RANDOM.name().toLowerCase();
+      }
+
       if (!WordsType.contains(newWordsType)) {
         return;
       }
@@ -114,7 +118,7 @@ public class HangmanGame {
       guess = input.nextLine().toUpperCase();
 
       if (guess.isEmpty()) {
-        return;
+        guess = "ñ";
       }
 
       letter = guess.charAt(0);
