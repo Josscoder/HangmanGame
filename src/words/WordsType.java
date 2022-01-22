@@ -1,4 +1,4 @@
-package josscoder.hangman.words;
+package words;
 
 import java.util.Arrays;
 

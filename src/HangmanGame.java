@@ -1,10 +1,8 @@
-package josscoder.hangman;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.stream.Collectors;
-import josscoder.hangman.words.WordsType;
+import words.WordsType;
 
 public class HangmanGame {
 
