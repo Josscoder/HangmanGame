@@ -19,7 +19,7 @@ public class HangmanGame {
     int numberOfWords
   ) {
     String fileName =
-        Paths.get(".").normalize().toAbsolutePath() + "\\src\\words\\" +
+        Paths.get(".").normalize().toAbsolutePath() + "\\words\\" +
       type +
       ".txt";
     File wordList = new File(fileName);
